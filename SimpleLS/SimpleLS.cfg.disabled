@@ -1,0 +1,25 @@
+//	===   SimpleLS   ===
+//	This is just an attempt to use TACLS with simplified resources
+
+RESOURCE_DEFINITION
+{
+    name = SimpleLS
+    density = 1.282439E-03
+    unitCost = 0.239730
+    flowMode = ALL_VESSEL
+    transfer = PUMP
+    isTweakable = True
+}
+
+@PART[*]:HAS[#CrewCapacity[>0],@MODULE[ModuleCommand]:HAS[#minimumCrew[>0]],!RESOURCE[Food]]:FOR[TacLifeSupport]
+{
+    RESOURCE
+    {
+        name = SimpleLS
+        amount = 1.0
+        maxAmount = 1.0
+        @amount *= #$/CrewCapacity$
+        @maxAmount *= #$/CrewCapacity$
+    }
+
+}
