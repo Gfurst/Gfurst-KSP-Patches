@@ -1,4 +1,20 @@
-## Gfurst's Patches ##
+# Gfurst-KSP-Patches
+
+### Purpuse
+
+These are just a handful of patches, done by Module Manager, to both stock and modded stuff, for balance and compatibility purposes.
+
+
+### Changelog
+
+* v0.2
+  Done some quick fixes
+  * Altered a bit of stock physics
+  * fixed a wrong patch result with SR
+  * fixed wrong patch with SR for RC
+  * cleaned-up patch RT for the SR probe core
+  * readme.md to root folder
+  * added the libreCad file for the KAX balances
 
 * v0.1 Initial release
   What this release patches?
